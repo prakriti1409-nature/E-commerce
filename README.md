@@ -56,18 +56,18 @@ The primary goal is to build a responsive, user-friendly Sales Chatbot that:
 ### Backend
 
 
-cd server
-python3 -m venv venv
-source venv/bin/activate    # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+-cd server
+-python3 -m venv venv
+-source venv/bin/activate    # On Windows: venv\Scripts\activate
+-pip install -r requirements.txt
 
-python -c "from database import init_db; init_db()"
-python app.py
+-python -c "from database import init_db; init_db()"
+-python app.py
 
 ###  Frontend
-cd client
-npm install
-npm run dev
+-cd client
+-npm install
+-npm run dev
 
 
 
