@@ -99,8 +99,15 @@ npm run dev
   Develop a dashboard for admins to track metrics like chat usage, most searched products, and user activity patterns.
 
 ---
-
+![s1](https://github.com/user-attachments/assets/12446da3-4c28-4dd1-87fd-f31e1d6abbc5)
+![s5](https://github.com/user-attachments/assets/89a9c464-71bc-4a63-9c7b-ef9f6f74e153)
 ![image](https://github.com/user-attachments/assets/ff4a3888-0bb8-4fe4-a121-34b2982f3aa2)
+![s8](https://github.com/user-attachments/assets/40caa040-ab20-4e05-bed6-6c277b55ba9f)
+![s9](https://github.com/user-attachments/assets/1140df92-966f-4d1a-8117-7c6c62518817)
+![s10](https://github.com/user-attachments/assets/0bb6a054-030f-4970-a2ee-e30ead5ce46e)
+
+
+
 
 
 
