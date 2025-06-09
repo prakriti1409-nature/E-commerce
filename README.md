@@ -53,23 +53,44 @@ The primary goal is to build a responsive, user-friendly Sales Chatbot that:
 
 ## 🚀 Setup Instructions
 
-### Backend
+### 🧩 Backend Setup
 
+```bash
+# Navigate to the server directory
+cd server
 
--cd server
--python3 -m venv venv
--source venv/bin/activate    # On Windows: venv\Scripts\activate
--pip install -r requirements.txt
+# Create a virtual environment
+python3 -m venv venv
 
--python -c "from database import init_db; init_db()"
--python app.py
+# Activate the virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
 
-###  Frontend
--cd client
--npm install
--npm run dev
+# Install required dependencies
+pip install -r requirements.txt
 
+# Initialize the SQLite database
+python -c "from database import init_db; init_db()"
 
+# Run the Flask application
+python app.py
+
+```
+### Frontend
+
+```bash
+
+# Navigate to the client directory
+cd client
+
+# Install frontend dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
 
 ## ⚙️ Challenges Faced
 
@@ -105,7 +126,6 @@ The primary goal is to build a responsive, user-friendly Sales Chatbot that:
 ![s8](https://github.com/user-attachments/assets/40caa040-ab20-4e05-bed6-6c277b55ba9f)
 ![s9](https://github.com/user-attachments/assets/1140df92-966f-4d1a-8117-7c6c62518817)
 ![s10](https://github.com/user-attachments/assets/0bb6a054-030f-4970-a2ee-e30ead5ce46e)
-
 
 
 
