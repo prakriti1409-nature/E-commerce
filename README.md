@@ -1,106 +1,108 @@
-# E-commerce
 # 🛍️ E-commerce Sales Chatbot
 
-An interactive, intelligent chatbot built for a simulated e-commerce platform. It enables users to explore products, search by query, and manage sessions with login/register support. The system integrates a React-based frontend with a Python Flask backend and a SQLite database.
+An interactive, intelligent chatbot built for a simulated e-commerce platform. This system allows users to explore products, search by queries, and manage sessions through login/register functionalities. The architecture combines a React-based frontend with a Python Flask backend and a SQLite database.
 
 ---
 
 ## 🔍 Project Objective
 
-The goal of this project is to create a responsive, user-friendly **Sales Chatbot** for an e-commerce platform that:
+The primary goal is to build a responsive, user-friendly Sales Chatbot that:
+
 - Provides intelligent responses to product-related queries.
-- Allows users to register, log in, and search products.
+- Enables user registration, login, and session management.
+- Allows product search through chat or manual query.
 - Stores chat logs and session data.
-- Helps simulate a complete e-commerce flow from product discovery to interaction.
+- Simulates a complete e-commerce flow from product discovery to user interaction.
 
 ---
 
 ## 🧠 Features
 
-- ✅ Login & Registration with secure password hashing (`bcrypt`)
-- ✅ Chatbot interface with real-time responses
-- ✅ Product search via chatbot or direct query
-- ✅ RESTful API integration with a Flask backend
-- ✅ 100+ mock product entries in SQLite database
-- ✅ Admin access to view stored chat logs
-- ✅ Fully responsive frontend using **React**
-- ✅ Modular, scalable and clean codebase
+✅ Secure login & registration with password hashing using **bcrypt**  
+✅ Real-time chatbot interface for user interaction  
+✅ Product search via chatbot queries or direct text  
+✅ RESTful API integrated with Flask backend  
+✅ 100+ mock product entries seeded into SQLite database  
+✅ Admin access to view chat logs  
+✅ Fully responsive frontend using **React.js** and **Tailwind CSS**  
+✅ Scalable and modular codebase with Flask Blueprints  
 
 ---
 
-Tech Stack
-Frontend:
-React.js (with React Router)
+## 🛠️ Tech Stack
 
-Tailwind CSS for UI
+### Frontend
 
-Axios for API calls
+- **React.js** (with React Router)
+- **Tailwind CSS** for UI
+- **Axios** for API integration
+- **Framer Motion** *(optional for animations)*
 
-Framer Motion (optional for animations)
+### Backend
 
-Backend:
-Python Flask
+- **Python Flask**
+- **Flask Blueprints** for modular routing
+- **SQLite** for database
+- **bcrypt** for secure password hashing
+- **CORS middleware** for frontend-backend communication
+- **Error-handling middleware**
 
-Flask Blueprints for modular routing
+---
 
-SQLite for database
+---
 
-bcrypt for password hashing
+## 🚀 Setup Instructions
 
-CORS and error-handling middleware
+### Backend
 
-🗃️ Directory Structure
-pgsql
-Copy
-Edit
-/client
-  ├── components/
-  ├── pages/
-  ├── App.js
-  └── index.js
-
-/server
-  ├── auth_routes.py
-  ├── product_routes.py
-  ├── chat_routes.py
-  ├── database.py
-  ├── app.py
-  └── static/products.json
-
-README.md
-🚀 Setup Instructions
-Backend:
 
 cd server
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate    # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-# Initialize DB
 python -c "from database import init_db; init_db()"
-
-# Run Flask App
 python app.py
 
-Frontend:
-
+###  Frontend
 cd client
 npm install
 npm run dev
 
 
-🧠 Challenges Faced
-Login Bug Fixing: Resolved credential mismatch issues by integrating bcrypt for secure password hashing and matching during login.
 
-Chat Parsing: Designed a basic NLP-like keyword matching mechanism to process product queries like "show me mobiles".
+## ⚙️ Challenges Faced
 
-Cross-Origin Resource Sharing (CORS): Handled CORS issues to ensure seamless frontend-backend communication.
+- 🔐 **Login Bug Fixing**  
+  Resolved issues with credential mismatches by integrating `bcrypt` for secure password hashing and verification during the login process.
 
-Session Persistence: Used localStorage to track logged-in users and persist session state across page reloads.
+- 💬 **Chat Parsing**  
+  Designed a simple NLP-like mechanism using keyword-based query detection to handle product-related queries such as “show me mobiles”.
 
-💡 Future Enhancements
-🔍 Add filtering options (price range, category, etc.) in chatbot and product page
+- 🌐 **CORS Configuration**  
+  Set up CORS middleware to enable smooth and secure communication between the React frontend and Flask backend.
 
-📦 Integrate image support and product pages
+- 🔄 **Session Persistence**  
+  Used `localStorage` to preserve user login state and session information across browser reloads for better user experience.
 
-📈 Analytics dashboard for admins (chat usage, most searched products)
+---
+
+## 💡 Future Enhancements
+
+- 🔍 **Advanced Product Filtering**  
+  Add dynamic filters (e.g., price range, category, availability) in both the chatbot and product search UI.
+
+- 🖼️ **Product Images & Detail Pages**  
+  Enhance product listings with image support and individual product pages containing detailed information.
+
+- 📊 **Admin Analytics Dashboard**  
+  Develop a dashboard for admins to track metrics like chat usage, most searched products, and user activity patterns.
+
+---
+
+![image](https://github.com/user-attachments/assets/ff4a3888-0bb8-4fe4-a121-34b2982f3aa2)
+
+
+
+
+
