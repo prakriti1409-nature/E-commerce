@@ -1,4 +1,4 @@
-# 🛍️ E-commerce Sales Chatbot
+# 🛍️ PIXIECART
 
 An interactive, intelligent chatbot built for a simulated e-commerce platform. This system allows users to explore products, search by queries, and manage sessions through login/register functionalities. The architecture combines a React-based frontend with a Python Flask backend and a SQLite database.
 
