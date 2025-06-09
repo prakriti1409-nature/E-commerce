@@ -82,7 +82,7 @@ def chat():
             bot_reply = "Sorry, I couldn’t find anything that matches."
 
     else:
-        bot_reply = "Sorry, I didn’t understand that. Try asking about a product."
+        bot_reply = "Oops, my wires got crossed! Maybe ask me about a product—I promise I’m better at that than small talk.😄."
 
     log_chat(username, "bot", bot_reply)
     conn.close()
